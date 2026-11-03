@@ -1,0 +1,14 @@
+column,type,description,values / range
+CustomerID,text,Unique customer identifier,CUST-1001 to CUST-1015
+Gender,text,Customer gender,"Male, Female"
+Age,integer,Customer age in years,23 to 60
+TenureMonths,integer,Months the customer has been subscribed,2 to 48
+SubscriptionType,text,Subscription plan,"Basic, Pro, Enterprise"
+MonthlyCharges,decimal,Monthly fee for the plan,"49.99, 79.99, 149.99"
+TotalCharges,decimal,Total billed so far (about TenureMonths x MonthlyCharges),99.98 to 7199.52
+ContractType,text,Contract length,"Month-to-Month, One Year, Two Year"
+SupportTickets,integer,Number of support tickets raised,0 to 6
+PaymentMethod,text,How the customer pays,"Credit Card, Debit Card, UPI, Bank Transfer"
+Churn,text,Did the customer leave? (original column),"Yes, No"
+ChurnFlag,integer,"Added: 1 if Churn = Yes, else 0","0, 1"
+AvgChargePerMonth,decimal,Added: TotalCharges / TenureMonths (billing cross-check),equals MonthlyCharges
